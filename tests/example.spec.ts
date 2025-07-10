@@ -4,6 +4,9 @@
 //태그가 없는 테스트만 실행
 // npx playwright test --grep-invert
 
+// @first 태그가 없는 테스트만 실행
+// npx playwright test --grep-invert @first
+
 import { test, expect } from "@playwright/test";
 
 test("has title", async ({ page }) => {
