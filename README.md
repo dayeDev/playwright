@@ -1,53 +1,57 @@
 # Learning Playwright
 
-This is the repository for the LinkedIn Learning course `learning-playwright`. The full course is available from [LinkedIn Learning][lil-course-url].
+여기는 LinkedIn Learning 과정 `learning-playwright`입니다.  
+전체 과정은 [LinkedIn Learning][lil-course-url]
+에서 이용할 수 있습니다.
 
 ![learning-playwright][lil-thumbnail-url]
 
 ## Course Description
 
-It’s no surprise that Playwright has joined the ranks of other top-rated open-source automation tools. Playwright’s comprehensive feature set allows testers and developers to quickly create new test automation projects without having to combine multiple libraries and other tools. Whether you’re a manual tester, a quality assurance specialist, a software developer, or a seasoned automation engineer, this course offers hands-on, practical experience with using some of the most important features of Playwright. Join instructor Butch Mayhew as he takes you through the essentials and prepares you to start writing, running, analyzing, and debugging your first test.
+Playwright가 다른 최고 등급의 오픈 소스 자동화 도구 대열에 합류한 것은 놀라운 일이 아닙니다. 테스터와 개발자는 여러 라이브러리 및 기타 도구를 결합하지 않고도 새로운 테스트 자동화 프로젝트를 빠르게 생성할 수 있는 Playwright의 포괄적인 기능 세트를 사용할 수 있습니다.  수동 테스터, 품질 보증 전문가, 소프트웨어 개발자, 숙련된 자동화 엔지니어 등 이 과정을 통해 Playwright의 가장 중요한 기능을 직접 사용해 볼 수 있는 실무 경험을 쌓을 수 있습니다. 강사와 함께 필수 사항을 살펴보고 첫 번째 테스트 작성, 실행, 분석 및 디버깅을 시작할 수 있도록 준비하세요.
 
-_See the readme file in the main branch for updated instructions and information._
+_업데이트된 지침과 정보는 메인 브랜치에 있는 readme 파일을 참조하세요._
 
 ## Instructions
 
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+이 리포지토리에는 강좌의 각 비디오에 대한 브랜치가 있습니다. github의 브랜치 팝업 메뉴를 사용하여 특정 브랜치로 전환하여 해당 단계의 강좌를 살펴볼 수 있으며, URL에 `/tree/BRANCH_NAME`을 추가하여 액세스하려는 브랜치로 이동할 수도 있습니다.
 
 ## Branches
 
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter.
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
+분기는 코스의 비디오에 해당하는 구조로 되어 있습니다. 명명 규칙은 `CHAPTER#_MOVIE#`입니다. 예를 들어, `02_03`이라는 브랜치는 두 번째 챕터와 해당 챕터의 세 번째 비디오에 해당합니다.
+일부 브랜치에는 시작과 끝 상태가 있습니다. 이러한 브랜치는 "시작"을 나타내는 `b`와 "끝"을 나타내는 `e`로 표시됩니다. `b` 브랜치에는 동영상의 시작 부분에 있는 코드가 그대로 들어 있습니다. `e` 브랜치에는 동영상이 끝날 때의 코드가 그대로 들어 있습니다. 메인 브랜치는 코스에 있을 때 코드의 최종 상태를 보관합니다.
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
+파일을 변경한 후 한 연습 파일 브랜치에서 다른 연습 파일 브랜치로 전환할 때 다음과 같은 메시지가 표시될 수 있습니다:
 
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
+    오류가 발생했습니다: 결제 시 다음 파일에 대한 로컬 변경 내용을 덮어씁니다:
+    [files]
+    브랜치를 전환하기 전에 변경 내용을 커밋하거나 저장해 주세요.
+    중단
 
-To resolve this issue:
-Add changes to git using this command: git add .
-Commit changes using this command: git commit -m "some message"
+이 문제를 해결하려면 다음과 같이 하세요:  
+다음 명령을 사용하여 git에 변경 사항을 추가합니다: git add .  
+다음 명령을 사용하여 변경 사항을 커밋합니다: git commit -m "일부 메시지"
 
 ## Using the Course Repository
 
-1. To use these exercise files, you must have the following installed:
-   - Current, Active, or Maintenance version of [node](https://nodejs.org/en/about/previous-releases) | [node installer](https://nodejs.org/en/download/prebuilt-installer)
+1. 이 연습 파일을 사용하려면 다음이 설치되어 있어야 합니다:
+   - 현재, 활성 또는 유지 관리 버전 [node](https://nodejs.org/en/about/previous-releases) | [node installer](https://nodejs.org/en/download/prebuilt-installer)
    - [GIT](https://github.com/git-guides/install-git) for command line only or [GitHub Desktop](https://github.com/apps/desktop) for a GUI experience.
    - [VS Code](https://code.visualstudio.com/) Code Editor
    - [Playwright Test for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
-   - The rest of the steps are covered in the course
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. Utilize the [RESOURCES.md](./RESOURCES.md) file to follow along with all the links to the course.
+   - 나머지 단계는 다음 강좌에서 다룹니다.
+2. 터미널(Mac), CMD(Windows) 또는 SourceTree와 같은 GUI 도구를 사용하여 이 리포지토리를 로컬 머신에 복제합니다.
+3. [RESOURCES.md](./RESOURCES.md) 파일을 활용하여 코스에 대한 모든 링크를 따라가십시오.
 
 ## Instructor
 
 Butch Mayhew
 
-Playwright Ambassador
+Playwright 홍보대사
 
                         
-Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/butch-mayhew?u=104).
+다음에서 다른 강좌를 확인하세요.
+[LinkedIn Learning](https://www.linkedin.com/learning/instructors/butch-mayhew?u=104).
 
 [0]: # "Replace these placeholder URLs with actual course URLs"
 [lil-course-url]: https://www.linkedin.com/learning/learning-playwright/
